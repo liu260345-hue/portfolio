@@ -59,123 +59,22 @@
             display: block;
         }
 
-        /* ===== PROFILE CARD ===== */
-        .profile-section {
+        /* ===== RESUME DETAIL ===== */
+        .resume-detail {
+            width: 100%;
             max-width: 1100px;
             margin: 0 auto;
-            padding: 60px 40px;
+            padding: 0 40px;
         }
 
-        .profile-card {
-            background: #111;
-            border: 1px solid rgba(255,32,32,0.15);
-            display: flex;
-            align-items: stretch;
-            overflow: hidden;
-        }
-
-        .profile-left {
-            width: 320px;
-            flex-shrink: 0;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 30px;
-            background: #0a0a0a;
-        }
-
-        .profile-left .avatar {
+        .resume-detail img {
             width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-        }
-
-        .profile-left .name-block {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .profile-left .name-block h2 {
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: 6px;
-        }
-
-        .profile-left .name-block .subtitle {
-            font-size: 13px;
-            color: #888;
-            letter-spacing: 1px;
-        }
-
-        .profile-right {
-            flex: 1;
-            padding: 50px 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .profile-right .section-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 24px;
-        }
-
-        .profile-right .section-title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 22px;
-            font-weight: 700;
-        }
-
-        .profile-right .section-title .slash {
-            color: #ff2020;
-            font-weight: 900;
-            font-size: 24px;
-        }
-
-        .profile-right .section-en {
-            font-size: 12px;
-            color: #333;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .profile-right .bio {
-            color: #999;
-            font-size: 14px;
-            line-height: 2;
-        }
-
-        .profile-right .bio p {
-            margin-bottom: 12px;
+            height: auto;
+            display: block;
+            border: 1px solid rgba(255,32,32,0.15);
         }
 
         /* ===== RESPONSIVE ===== */
-        @media (max-width: 860px) {
-            .profile-card {
-                flex-direction: column;
-            }
-
-            .profile-left {
-                width: 100%;
-                height: 360px;
-            }
-
-            .profile-right {
-                padding: 30px;
-            }
-        }
-
         @media (max-width: 768px) {
             .back {
                 top: 12px;
@@ -184,24 +83,8 @@
                 padding: 6px 12px;
             }
 
-            .profile-section {
-                padding: 30px 16px;
-            }
-
-            .profile-left {
-                height: 300px;
-            }
-
-            .profile-right {
-                padding: 24px 20px;
-            }
-
-            .profile-right .section-title {
-                font-size: 18px;
-            }
-
-            .profile-right .bio {
-                font-size: 13px;
+            .resume-detail {
+                padding: 0 16px;
             }
         }
     </style>
@@ -215,28 +98,10 @@
         </div>
     </div>
 
-    <div class="profile-section">
-        <div class="profile-card">
-            <div class="profile-left">
-                <img class="avatar" src="sec-01.png" alt="但俊">
-                <div class="name-block">
-                    <h2>但俊</h2>
-                    <div class="subtitle">AIGC视觉创作者</div>
-                </div>
-            </div>
-            <div class="profile-right">
-                <div class="section-header">
-                    <div class="section-title">
-                        <span class="slash">/</span> 个人简介
-                    </div>
-                    <div class="section-en">ABOUT ME</div>
-                </div>
-                <div class="bio">
-                    <p>专注于 AI 视觉内容创作，擅长将创意与技术结合，打造具有视觉冲击力和传播力的内容。</p>
-                    <p>致力于通过 AI 技术探索更多可能性，助力品牌与内容在视觉时代脱颖而出。</p>
-                </div>
-            </div>
-        </div>
+    <div class="resume-detail">
+        <img src="resume-detail.png" alt="个人简历详情">
     </div>
+
+
 </body>
 </html>
